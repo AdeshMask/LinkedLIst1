@@ -8,6 +8,7 @@ public class MainClass {
         list.add(56);
         list.add(30);
         list.add(70);
+        list.add(45);
         list.display();
     }
 }
