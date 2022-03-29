@@ -16,9 +16,9 @@ public class MainClass {
 //        list.push(30);
 //        list.push(56);
         //***********UC3*************
-        list.add(56);
-        list.add(30);
-        list.add(70);
+//        list.add(56);
+//        list.add(30);
+//        list.add(70);
         //list.insertAfter(70,99);
         //list.display();
         //list.pop();
@@ -26,7 +26,13 @@ public class MainClass {
 //        System.out.println();
 //        list.popLast();
 //        list.display();
-        list.search(30);
+//        list.search(30);
+        list.add(56);
+        list.add(30);
+        list.add(70);
+        list.insertAfter(30,40);
+        list.display();
+
 
     }
 }
