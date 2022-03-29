@@ -20,6 +20,8 @@ public class MainClass {
         list.add(70);
         list.add(76);
         list.insertAfter(70,99);
+        //list.display();
+        list.pop();
         list.display();
     }
 }
