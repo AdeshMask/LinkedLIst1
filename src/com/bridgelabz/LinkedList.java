@@ -42,7 +42,7 @@ public class LinkedList {
                 return temp;
             }
             temp = temp.next;
-            System.out.println(data);
+            //System.out.println(data);
         }
         return null;
     }
