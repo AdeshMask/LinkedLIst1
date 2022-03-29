@@ -22,10 +22,11 @@ public class MainClass {
         //list.insertAfter(70,99);
         //list.display();
         //list.pop();
-        list.display();
-        System.out.println();
-        list.popLast();
-        list.display();
+//        list.display();
+//        System.out.println();
+//        list.popLast();
+//        list.display();
+        list.search(30);
 
     }
 }
