@@ -22,6 +22,7 @@ public class MainClass {
         list.insertAfter(70,99);
         //list.display();
         list.pop();
+        System.out.println();
         list.display();
     }
 }
