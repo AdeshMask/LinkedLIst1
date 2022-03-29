@@ -17,11 +17,15 @@ public class MainClass {
 //        list.push(56);
         //***********UC3*************
         list.add(56);
+        list.add(30);
         list.add(70);
-        list.add(76);
-        list.insertAfter(70,99);
+        //list.insertAfter(70,99);
         //list.display();
-        list.pop();
+        //list.pop();
         list.display();
+        System.out.println();
+        list.popLast();
+        list.display();
+
     }
 }
