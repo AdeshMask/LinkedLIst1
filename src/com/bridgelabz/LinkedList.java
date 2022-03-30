@@ -1,11 +1,11 @@
 package com.bridgelabz;
 
-public class LinkedList {
-    Node head;
-    Node tail;
+public class LinkedList <K>{
+    Node<K> head;
+    Node<K> tail;
 
-    public void add(int data) {
-        Node newNode = new Node(data);
+    public void add(K data) {
+        Node<K> newNode = new Node(data);
         if (head == null){
             head = newNode;
             tail = newNode;
@@ -17,15 +17,15 @@ public class LinkedList {
     }
 
     public void display() {
-        Node temp = head;
+        Node<K> temp = head;
         while (temp != null){
             System.out.print(temp.data+"=>");
             temp=temp.next;
         }
     }
 
-    public void push(int data) {
-        Node newNode = new Node(data);
+    public void push(K data) {
+        Node<K> newNode = new Node(data);
         if (head == null){
             head = newNode;
             tail = newNode;
@@ -35,8 +35,8 @@ public class LinkedList {
             head = newNode;
         }
     }
-    public Node search(int data){
-        Node temp = head;
+    public Node search(K data){
+        Node<K> temp = head;
         while(temp != null){
             if(temp.data == data) {
                 return temp;
@@ -47,9 +47,9 @@ public class LinkedList {
         return null;
     }
 
-    public void insertAfter(int prevNodeData, int data) {
-        Node newNode = new Node(data);
-        Node searchedNode = this.search(prevNodeData);
+    public void insertAfter(K prevNodeData, K data) {
+        Node<K> newNode = new Node(data);
+        Node<K> searchedNode = this.search(prevNodeData);
         if( searchedNode!= null){
             Node tempNode = searchedNode.next;
             searchedNode.next = newNode;
@@ -62,8 +62,8 @@ public class LinkedList {
     }
 
     public void popLast() {
-        Node temp = head;
-        Node prevNode = null;
+        Node<K> temp = head;
+        Node<K> prevNode = null;
         while (temp.next != null) {
             prevNode = temp;
             temp = temp.next;
@@ -72,7 +72,7 @@ public class LinkedList {
     }
 
     public void remove(int position) {
-        Node temp = head;
+        Node<K> temp = head;
         if (head == null)
             return;
         if (position == 0){

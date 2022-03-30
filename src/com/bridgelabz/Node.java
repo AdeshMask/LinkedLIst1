@@ -1,14 +1,14 @@
 package com.bridgelabz;
 
-public class Node {
-    Node prevNode;
-    int data;
-    Node next;
+public class Node<K> {
+    Node<K> prevNode;
+    K data;
+    Node<K> next;
 
     Node(){
 
     }
-    Node(int data){
+    Node(K data){
         this.data = data;
     }
 }
