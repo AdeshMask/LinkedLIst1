@@ -70,4 +70,30 @@ public class LinkedList {
         }
         prevNode.next = null;
     }
+
+    public void remove(int position) {
+        Node temp = head;
+        if (head == null)
+            return;
+        if (position == 0){
+            head =temp.next;
+            return;
+        }
+        for (int i = 0; temp != null && i < position-1;i++) {
+            temp = temp.next;
+            Node next = temp.next.next;
+            temp.next =next;
+        }
+    }
+
+    public int size() {
+        Node temp=head;
+        int count = 0;
+        while(temp!=null)
+        {
+            temp=temp.next;
+            count++;
+        }
+        return count;
+    }
 }

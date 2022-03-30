@@ -15,6 +15,7 @@ public class MainClass {
 //        list.push(70);
 //        list.push(30);
 //        list.push(56);
+//        list.display();
         //***********UC3*************
 //        list.add(56);
 //        list.add(30);
@@ -29,8 +30,12 @@ public class MainClass {
 //        list.search(30);
         list.add(56);
         list.add(30);
+        list.add(40);
         list.add(70);
-        list.insertAfter(30,40);
+        list.display();
+        System.out.println();
+        list.remove(2);
+        System.out.println(list.size());
         list.display();
 
 
