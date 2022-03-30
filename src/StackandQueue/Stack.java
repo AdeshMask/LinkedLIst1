@@ -21,6 +21,5 @@ public class Stack {
         list.display();
         System.out.println("\nThe Stack is empty....");
 
-
     }
 }
